@@ -490,11 +490,10 @@
                 Dati personali
             </h1>
             <button class="btn btn-main py-0 px-2 fs-3 d-block d-lg-none w-auto"
-                data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                data-bs-toggle="offcanvas" data-bs-target="#myOffcanvas" aria-controls="offcanvasExample">
                 <i class="bi bi-list"></i>
             </button>
         </div>
-
         <div class="row g-md-5">
             <div class="col-lg-4 position-relative">
                 <div class="list-group sticky-lg-top d-none d-lg-block" style="top: 200px; z-index: 999;">
@@ -1160,7 +1159,7 @@
     </section>
 
 
-    <div class="offcanvas offcanvas-start bg-body-color" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start bg-body-color" tabindex="-1" id="myOffcanvas" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <button class="text-main ms-auto" data-bs-dismiss="offcanvas">
             <i class="bi bi-x-lg fs-4"></i>
@@ -1170,48 +1169,48 @@
             <span class="d-block text-accent fw-semibold">Ciao lettore!</span>
             <h5 class="text-main">Enrico Cinasco</h5>
 
-            <ul class="navbar-nav justify-content-center gap-lg-4 mt-5 mt-lg-0">
-                <li class="nav-item with-arrow">
-                    <a class="nav-link text-main pointer" id="v-data-tab" data-bs-toggle="tab" data-bs-target="#v-data" role="tab" aria-controls="v-data" aria-selected="true">
+            <ul class="navbar-nav justify-content-center gap-lg-4 mt-5 mt-lg-0" role="tablist" id="myTabs">
+                <li class="nav-item with-arrow" role="presentation">
+                    <button type="button" class="nav-link text-main pointer active" id="v-data-tab" data-bs-toggle="tab" data-bs-target="#v-data" role="tab" aria-controls="v-data" aria-selected="true">
                         <i class="bi bi-person fs-4 me-3"></i>
                         <span class="fw-semibold">Dati personali</span>
-                    </a>
+                    </button>
                 </li>
-                <li class="nav-item with-arrow">
-                    <a class="nav-link text-main pointer" href="#" id="v-address-tab" data-bs-toggle="tab" data-bs-target="#v-address" role="tab" aria-controls="v-address" aria-selected="false">
+                <li class="nav-item with-arrow" role="presentation">
+                    <button type="button" class="nav-link text-main pointer" id="v-address-tab" data-bs-toggle="tab" data-bs-target="#v-address" role="tab" aria-controls="v-address" aria-selected="false">
                         <i class="bi bi-geo-alt fs-4 me-3"></i>
                         <span class="fw-semibold">Indirizzi</span>
-                    </a>
+                    </button>
                 </li>
-                <li class="nav-item with-arrow">
-                    <a class="nav-link text-main pointer" href="#" id="v-purchases-tab" data-bs-toggle="tab" data-bs-target="#v-purchases" role="tab" aria-controls="v-purchases" aria-selected="false">
+                <li class="nav-item with-arrow" role="presentation">
+                    <button type="button" class="nav-link text-main pointer" id="v-purchases-tab" data-bs-toggle="tab" data-bs-target="#v-purchases" role="tab" aria-controls="v-purchases" aria-selected="false">
                         <i class="bi bi-cart2 fs-4 me-3"></i>
                         <span class="fw-semibold">I tuoi acquisti</span>
-                    </a>
+                    </button>
                 </li>
-                <li class="nav-item with-arrow">
-                    <a class="nav-link text-main pointer" href="#" id="v-balance-tab" data-bs-toggle="tab" data-bs-target="#v-balance" role="tab" aria-controls="v-balance" aria-selected="true">
+                <li class="nav-item with-arrow" role="presentation">
+                    <button type="button" class="nav-link text-main pointer" id="v-balance-tab" data-bs-toggle="tab" data-bs-target="#v-balance" role="tab" aria-controls="v-balance" aria-selected="false">
                         <i class="bi bi-credit-card fs-4 me-3"></i>
                         <span class="fw-semibold">Saldo Gift Card</span>
-                    </a>
+                    </button>
                 </li>
-                <li class="nav-item with-arrow">
-                    <a class="nav-link text-main pointer" href="#" id="v-favorite-tab" data-bs-toggle="tab" data-bs-target="#v-favorite" role="tab" aria-controls="v-favorite" aria-selected="true">
+                <li class="nav-item with-arrow" role="presentation">
+                    <button type="button" class="nav-link text-main pointer" id="v-favorite-tab" data-bs-toggle="tab" data-bs-target="#v-favorite" role="tab" aria-controls="v-favorite" aria-selected="false">
                         <i class="bi bi-book fs-4 me-3"></i>
                         <span class="fw-semibold">Librerie preferite</span>
-                    </a>
+                    </button>
                 </li>
-                <li class="nav-item with-arrow">
-                    <a class="nav-link text-main pointer" href="#" id="v-wishlist-tab" data-bs-toggle="tab" data-bs-target="#v-wishlist" role="tab" aria-controls="v-wishlist" aria-selected="true">
+                <li class="nav-item with-arrow" role="presentation">
+                    <button type="button" class="nav-link text-main pointer" id="v-wishlist-tab" data-bs-toggle="tab" data-bs-target="#v-wishlist" role="tab" aria-controls="v-wishlist" aria-selected="false">
                         <i class="bi bi-heart fs-4 me-3"></i>
                         <span class="fw-semibold">Lista desideri</span>
-                    </a>
+                    </button>
                 </li>
-                <li class="nav-item with-arrow">
-                    <a class="nav-link text-main pointer" href="#" id="v-reviews-tab" data-bs-toggle="tab" data-bs-target="#v-reviews" role="tab" aria-controls="v-reviews" aria-selected="true">
+                <li class="nav-item with-arrow" role="presentation">
+                    <button type="button" class="nav-link text-main pointer" id="v-reviews-tab" data-bs-toggle="tab" data-bs-target="#v-reviews" role="tab" aria-controls="v-reviews" aria-selected="false">
                         <i class="bi bi-chat-dots fs-4 me-3"></i>
                         <span class="fw-semibold">Recensioni</span>
-                    </a>
+                    </button>
                 </li>
                 <li class="nav-item with-arrow pointer">
                     <button class="nav-link text-main">
@@ -1311,6 +1310,17 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/app.js"></script>
+    <script>
+        // Initialize Tabs inside Offcanvas
+        var offcanvasTabs = new bootstrap.Tab(document.querySelector('#myTabs'))
+        var offcanvasEl = document.querySelector('#myOffcanvas')
+        offcanvasEl.addEventListener('shown.bs.offcanvas', function () {
+          offcanvasTabs.show()
+        })
+        offcanvasEl.addEventListener('hidden.bs.offcanvas', function () {
+          offcanvasTabs.hide()
+        })
+        </script>
 </body>
 
 </html>
