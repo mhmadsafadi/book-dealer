@@ -320,7 +320,7 @@ input[type="search"] {
   .offcanvas li.nav-item:last-child {
     border-bottom: 1px solid #cfcfcf;
   }
-  li.nav-item.has-megamenu:before {
+  li.nav-item.has-megamenu:before, li.nav-item.with-arrow:before {
     content: ">";
     position: absolute;
     right: 12px;
@@ -493,3 +493,12 @@ i.bi.bi-star-fill, .bi-star, i.bi.bi-patch-check {
 #tab-title i {
   display: none !important;
 }
+
+
+@media(max-width: 576px){
+  .modal-content{
+    border-radius: 0 !important;
+    border: 0 !important;
+  }
+}
+

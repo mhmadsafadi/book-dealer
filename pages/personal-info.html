@@ -485,13 +485,19 @@
     <!--================= New Start  ===================-->
 
     <section class="container text-center my-5 tabs-info">
-        <h1 id="tab-title" class="title text-main text-center mb-5">
-            Dati personali
-        </h1>
+        <div class="mb-5 d-flex align-items-center justify-content-between justify-content-lg-center">
+            <h1 id="tab-title" class="title text-main text-center m-0">
+                Dati personali
+            </h1>
+            <button class="btn btn-main py-0 px-2 fs-3 d-block d-lg-none w-auto"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
 
         <div class="row g-md-5">
-            <div class="col-lg-4">
-                <div class="list-group">
+            <div class="col-lg-4 position-relative">
+                <div class="list-group sticky-lg-top d-none d-lg-block" style="top: 200px; z-index: 999;">
                     <a class="list-group-item list-group-item-action pointer active" id="v-data-tab"
                         data-bs-toggle="tab" data-bs-target="#v-data" role="tab" aria-controls="v-data"
                         aria-selected="true">
@@ -601,9 +607,374 @@
                             </form>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="v-address" role="tabpanel" aria-labelledby="v-address-tab">address</div>
-                    <div class="tab-pane fade" id="v-purchases" role="tabpanel" aria-labelledby="v-purchases-tab">purchases</div>
-                    <div class="tab-pane fade" id="v-balance" role="tabpanel" aria-labelledby="v-balance-tab">balance</div>
+                    <div class="tab-pane fade" id="v-address" role="tabpanel" aria-labelledby="v-address-tab">
+                        <div class="px-4">
+                            <h5 class="text-main fw-semibold">
+                                Riepilogo Ordine
+                            </h5>
+                            <hr class="border border-secondary border-opacity-75 mb-4">
+                            <div class="d-flex justify-content-between align-items-center flex-column flex-xl-row gap-3 mb-4">
+                                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                                    <img src="../images/Immagine.png" class="img-fluid img-thumbnail rounded-circle" alt="..." style="width:6rem;height:6rem;">
+                                    <div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div>
+                                                <i class="bi bi-star-fill me-1 fs-5"></i>
+                                                <small class="text-main">4.6/5</small>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-patch-check me-1 fs-5"></i>
+                                                <small class="text-main">Disponibilità aggiornate</small>
+                                            </div>
+                                        </div>
+                                        <h6 class="text-main text-center text-md-start my-2">Cartolibreria Edicola Antonini</h6>
+                                        <small class="d-block text-muted text-center text-md-start">Via Marsala 24, 37067 Valeggio sul micino</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between gap-4">
+                                    <div class="text-center">
+                                        <span class="fw-semibold text-main">4.6/5</span>
+                                        <div class="">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-main rounded-pill px-3 w-auto">
+                                        Modifica
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-column flex-xl-row gap-3 mb-4">
+                                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                                    <img src="../images/Immagine.png" class="img-fluid img-thumbnail rounded-circle" alt="..." style="width:6rem;height:6rem;">
+                                    <div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div>
+                                                <i class="bi bi-star-fill me-1 fs-5"></i>
+                                                <small class="text-main">4.6/5</small>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-patch-check me-1 fs-5"></i>
+                                                <small class="text-main">Disponibilità aggiornate</small>
+                                            </div>
+                                        </div>
+                                        <h6 class="text-main text-center text-md-start my-2">Cartolibreria Edicola Antonini</h6>
+                                        <small class="d-block text-muted text-center text-md-start">Via Marsala 24, 37067 Valeggio sul micino</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between gap-4">
+                                    <div class="text-center">
+                                        <span class="fw-semibold text-main">4.6/5</span>
+                                        <div class="">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-main rounded-pill px-3 w-auto">
+                                        Modifica
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-column flex-xl-row gap-3 mb-4">
+                                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                                    <img src="../images/Immagine.png" class="img-fluid img-thumbnail rounded-circle" alt="..." style="width:6rem;height:6rem;">
+                                    <div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div>
+                                                <i class="bi bi-star-fill me-1 fs-5"></i>
+                                                <small class="text-main">4.6/5</small>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-patch-check me-1 fs-5"></i>
+                                                <small class="text-main">Disponibilità aggiornate</small>
+                                            </div>
+                                        </div>
+                                        <h6 class="text-main text-center text-md-start my-2">Cartolibreria Edicola Antonini</h6>
+                                        <small class="d-block text-muted text-center text-md-start">Via Marsala 24, 37067 Valeggio sul micino</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between gap-4">
+                                    <div class="text-center">
+                                        <span class="fw-semibold text-main">4.6/5</span>
+                                        <div class="">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-outline-main rounded-pill px-3 w-auto">
+                                        Modifica
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-purchases" role="tabpanel" aria-labelledby="v-purchases-tab">
+                        <div class="px-4">
+                            <h5 class="text-main fw-semibold">
+                                Ordini
+                            </h5>
+                            <hr class="border border-secondary border-opacity-75 mb-4">
+                            <div class="d-flex flex-column flex-lg-row gap-3 justify-content-between mb-5">
+                                <div>
+                                    <div class="mb-2 mb-md-1">
+                                        <span class="text-main fw-semibold">Ordine:</span>
+                                        <span class="text-muted">DSJFOJOPSHLK</span>
+                                    </div>
+                                    <div class="d-flex flex-column flex-md-row gap-2 gap-md-4">
+                                        <div>
+                                            <span class="text-main fw-semibold">Data:</span>
+                                            <span class="text-muted">26/06/2026</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-main fw-semibold">Stato:</span>
+                                            <span class="text-muted">Spedito</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-main fw-semibold">Importo:</span>
+                                            <span class="text-muted">25,97€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-main rounded-pill px-3">Vedi dettagli ordine</button>
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row gap-3 justify-content-between mb-5">
+                                <div>
+                                    <div class="mb-2 mb-md-1">
+                                        <span class="text-main fw-semibold">Ordine:</span>
+                                        <span class="text-muted">DSJFOJOPSHLK</span>
+                                    </div>
+                                    <div class="d-flex flex-column flex-md-row gap-2 gap-md-4">
+                                        <div>
+                                            <span class="text-main fw-semibold">Data:</span>
+                                            <span class="text-muted">26/06/2026</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-main fw-semibold">Stato:</span>
+                                            <span class="text-muted">Spedito</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-main fw-semibold">Importo:</span>
+                                            <span class="text-muted">25,97€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-main rounded-pill px-3">Vedi dettagli ordine</button>
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row gap-3 justify-content-between mb-5">
+                                <div>
+                                    <div class="mb-2 mb-md-1">
+                                        <span class="text-main fw-semibold">Ordine:</span>
+                                        <span class="text-muted">DSJFOJOPSHLK</span>
+                                    </div>
+                                    <div class="d-flex flex-column flex-md-row gap-2 gap-md-4">
+                                        <div>
+                                            <span class="text-main fw-semibold">Data:</span>
+                                            <span class="text-muted">26/06/2026</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-main fw-semibold">Stato:</span>
+                                            <span class="text-muted">Spedito</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-main fw-semibold">Importo:</span>
+                                            <span class="text-muted">25,97€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-main rounded-pill px-3">Vedi dettagli ordine</button>
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row gap-3 justify-content-between mb-5">
+                                <div>
+                                    <div class="mb-2 mb-md-1">
+                                        <span class="text-main fw-semibold">Ordine:</span>
+                                        <span class="text-muted">DSJFOJOPSHLK</span>
+                                    </div>
+                                    <div class="d-flex flex-column flex-md-row gap-2 gap-md-4">
+                                        <div>
+                                            <span class="text-main fw-semibold">Data:</span>
+                                            <span class="text-muted">26/06/2026</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-main fw-semibold">Stato:</span>
+                                            <span class="text-muted">Spedito</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-main fw-semibold">Importo:</span>
+                                            <span class="text-muted">25,97€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-main rounded-pill px-3">Vedi dettagli ordine</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-balance" role="tabpanel" aria-labelledby="v-balance-tab">
+                        <div class="px-4">
+                            <h5 class="text-main fw-semibold">
+                                Ord.  #DFDIUGUIH254
+                            </h5>
+                            <hr class="border border-secondary border-opacity-75 mb-4">
+                            <div class="text-center mb-5">
+                                <h6 class="text-main">È in ritardo?</h6>
+                                <button class="btn btn-outline-main rounded-pill px-4">Richiedi aggiornamenti</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <p class="text-main fw-semibold mb-0">Ordine:</p>
+                                        <span class="text-muted">DFDIUGUIH254</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="text-main fw-semibold mb-0">Totale:</p>
+                                        <span class="text-muted">Totale:</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="text-main fw-semibold mb-0">M.Pagamento:</p>
+                                        <span class="text-muted">Satispay</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="text-main fw-semibold mb-0">Modalità di consegna altri prodotti:</p>
+                                        <span class="text-muted">Corriere - 4,90€</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <p class="text-main fw-semibold mb-0">Data:</p>
+                                        <span class="text-muted">26/06/2026 13:45</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="text-main fw-semibold mb-0">Stato ordine:</p>
+                                        <span class="text-muted">Spedito</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="text-main fw-semibold mb-0">Modalità di consegna Libri:</p>
+                                        <span class="text-muted">Ritiro in libreria</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="text-main fw-semibold mb-0">Cashback ordine:</p>
+                                        <span class="text-muted">1,03€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-4">
+                                <p class="text-main fw-semibold">Prodotti Libro:</p>
+                                <div class="d-flex gap-3 my-4">
+                                    <img src="../images/card.png" class="img-fluid" alt="">
+                                    <div class="d-flex flex-column justify-content-around">
+                                        <div>
+                                            <span class="text-accent">Riccardo Zannoni</span>
+                                            <p class="text-main">I miei stupidi intenti</p>
+                                        </div>
+                                        <div class="text-main">
+                                            <span class="fs-6 me-4">Qtà: 1</span>
+                                            <span class="fs-5 fw-medium">27,30€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 my-4">
+                                    <img src="../images/card.png" class="img-fluid" alt="">
+                                    <div class="d-flex flex-column justify-content-around">
+                                        <div>
+                                            <span class="text-accent">Riccardo Zannoni</span>
+                                            <p class="text-main">I miei stupidi intenti</p>
+                                        </div>
+                                        <div class="text-main">
+                                            <span class="fs-6 me-4">Qtà: 1</span>
+                                            <span class="fs-5 fw-medium">27,30€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 my-4">
+                                    <img src="../images/card.png" class="img-fluid" alt="">
+                                    <div class="d-flex flex-column justify-content-around">
+                                        <div>
+                                            <span class="text-accent">Riccardo Zannoni</span>
+                                            <p class="text-main">I miei stupidi intenti</p>
+                                        </div>
+                                        <div class="text-main">
+                                            <span class="fs-6 me-4">Qtà: 1</span>
+                                            <span class="fs-5 fw-medium">27,30€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-4">
+                                <p class="text-main fw-semibold">Prodotti non libro:</p>
+                                <div class="d-flex gap-3 my-4">
+                                    <img src="../images/Immagine Prodotto.png" class="img-fluid" alt="">
+                                    <div class="d-flex flex-column justify-content-around">
+                                        <div>
+                                            <span class="text-accent">Funko</span>
+                                            <p class="text-main">I miei Demon Slayer: Funko Pop! Animation - Tanjiro...</p>
+                                        </div>
+                                        <div class="text-main">
+                                            <span class="fs-6 me-4">Qtà: 1</span>
+                                            <span class="fs-5 fw-medium">27,30€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 my-4">
+                                    <img src="../images/Immagine Prodotto.png" class="img-fluid" alt="">
+                                    <div class="d-flex flex-column justify-content-around">
+                                        <div>
+                                            <span class="text-accent">Funko</span>
+                                            <p class="text-main">I miei Demon Slayer: Funko Pop! Animation - Tanjiro...</p>
+                                        </div>
+                                        <div class="text-main">
+                                            <span class="fs-6 me-4">Qtà: 1</span>
+                                            <span class="fs-5 fw-medium">27,30€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 my-4">
+                                    <img src="../images/Immagine Prodotto.png" class="img-fluid" alt="">
+                                    <div class="d-flex flex-column justify-content-around">
+                                        <div>
+                                            <span class="text-accent">Funko</span>
+                                            <p class="text-main">I miei Demon Slayer: Funko Pop! Animation - Tanjiro...</p>
+                                        </div>
+                                        <div class="text-main">
+                                            <span class="fs-6 me-4">Qtà: 1</span>
+                                            <span class="fs-5 fw-medium">27,30€</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-4">
+                                <p class="text-main fw-semibold mb-1">Totale:</p>
+                                <span class="text-muted fs-5">100,00€</span>
+                            </div>
+                            <div class="my-4">
+                                <p class="text-main fw-semibold mb-3">Libreria selezionata:</p>
+                                <div class="d-flex flex-column align-items-center gap-3">
+                                    <img src="../images/Immagine.png" class="img-fluid img-thumbnail rounded-circle" alt="..." style="width:6rem;height:6rem;">
+                                    <div>
+                                        <div class="d-flex justify-content-center gap-3">
+                                            <div>
+                                                <i class="bi bi-star-fill me-1 fs-5"></i>
+                                                <small class="text-main">4.6/5</small>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-patch-check me-1 fs-5"></i>
+                                                <small class="text-main">Disponibilità aggiornate</small>
+                                            </div>
+                                        </div>
+                                        <h6 class="text-main text-center my-2">Cartolibreria Edicola Antonini</h6>
+                                        <small class="d-block text-muted text-center">Via Marsala 24, 37067 Valeggio sul micino</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="tab-pane fade" id="v-favorite" role="tabpanel" aria-labelledby="v-favorite-tab">
                         <div class="px-4">
                             <h5 class="text-main fw-semibold">
@@ -758,117 +1129,99 @@
                                 Librerie recensite
                             </h5>
                             <hr class="border border-secondary border-opacity-75 mb-4">
-                            <div class="d-flex justify-content-between align-items-center flex-column flex-xl-row gap-3 mb-4">
-                                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
-                                    <img src="../images/Immagine.png" class="img-fluid img-thumbnail rounded-circle" alt="..." style="width:6rem;height:6rem;">
-                                    <div>
-                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div>
-                                                <i class="bi bi-star-fill me-1 fs-5"></i>
-                                                <small class="text-main">4.6/5</small>
-                                            </div>
-                                            <div>
-                                                <i class="bi bi-patch-check me-1 fs-5"></i>
-                                                <small class="text-main">Disponibilità aggiornate</small>
-                                            </div>
-                                        </div>
-                                        <h6 class="text-main text-center text-md-start my-2">Cartolibreria Edicola Antonini</h6>
-                                        <small class="d-block text-muted text-center text-md-start">Via Marsala 24, 37067 Valeggio sul micino</small>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between gap-4">
-                                    <div class="text-center">
-                                        <span class="fw-semibold text-main">4.6/5</span>
-                                        <div class="">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-outline-main rounded-pill px-3 w-auto">
-                                        Modifica
-                                    </button>
-                                </div>
+
+
+                            <div class="mb-4">
+                                <h6 class="text-main fw-semibold">Libreria:</h6>
+                                <p class="text-muted m-0">Cartolibreria Edicola Antonini</p>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center flex-column flex-xl-row gap-3 mb-4">
-                                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
-                                    <img src="../images/Immagine.png" class="img-fluid img-thumbnail rounded-circle" alt="..." style="width:6rem;height:6rem;">
-                                    <div>
-                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div>
-                                                <i class="bi bi-star-fill me-1 fs-5"></i>
-                                                <small class="text-main">4.6/5</small>
-                                            </div>
-                                            <div>
-                                                <i class="bi bi-patch-check me-1 fs-5"></i>
-                                                <small class="text-main">Disponibilità aggiornate</small>
-                                            </div>
-                                        </div>
-                                        <h6 class="text-main text-center text-md-start my-2">Cartolibreria Edicola Antonini</h6>
-                                        <small class="d-block text-muted text-center text-md-start">Via Marsala 24, 37067 Valeggio sul micino</small>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between gap-4">
-                                    <div class="text-center">
-                                        <span class="fw-semibold text-main">4.6/5</span>
-                                        <div class="">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-outline-main rounded-pill px-3 w-auto">
-                                        Modifica
-                                    </button>
-                                </div>
+                            <div class="mb-4">
+                                <h6 class="text-main fw-semibold">Recensito in data:</h6>
+                                <p class="text-muted m-0">28/04/2023</p>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center flex-column flex-xl-row gap-3 mb-4">
-                                <div class="d-flex flex-column flex-md-row align-items-center gap-3">
-                                    <img src="../images/Immagine.png" class="img-fluid img-thumbnail rounded-circle" alt="..." style="width:6rem;height:6rem;">
-                                    <div>
-                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div>
-                                                <i class="bi bi-star-fill me-1 fs-5"></i>
-                                                <small class="text-main">4.6/5</small>
-                                            </div>
-                                            <div>
-                                                <i class="bi bi-patch-check me-1 fs-5"></i>
-                                                <small class="text-main">Disponibilità aggiornate</small>
-                                            </div>
-                                        </div>
-                                        <h6 class="text-main text-center text-md-start my-2">Cartolibreria Edicola Antonini</h6>
-                                        <small class="d-block text-muted text-center text-md-start">Via Marsala 24, 37067 Valeggio sul micino</small>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between gap-4">
-                                    <div class="text-center">
-                                        <span class="fw-semibold text-main">4.6/5</span>
-                                        <div class="">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-outline-main rounded-pill px-3 w-auto">
-                                        Modifica
-                                    </button>
-                                </div>
+                            <div class="mb-4">
+                                <h6 class="text-main fw-semibold">Stato recensione:</h6>
+                                <p class="text-muted m-0">In approvazione</p>
                             </div>
+                            <div class="mb-4">
+                                <h6 class="text-main fw-semibold">Valutazione:</h6>
+                                <p class="text-muted m-0">5/5</p>
+                            </div>
+                            <div class="mb-4">
+                                <h6 class="text-main fw-semibold">Descrizione:</h6>
+                                <p class="text-muted m-0">Ottima libreria, ben fornita e con libraie sempre pronte a dare ottimi consigli di lettura</p>
+                            </div>
+                            <button class="btn btn-outline-main rounded-pill px-3">Rimuovi recensione</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </section>
 
+
+    <div class="offcanvas offcanvas-start bg-body-color" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <button class="text-main ms-auto" data-bs-dismiss="offcanvas">
+            <i class="bi bi-x-lg fs-4"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+            <span class="d-block text-accent fw-semibold">Ciao lettore!</span>
+            <h5 class="text-main">Enrico Cinasco</h5>
+
+            <ul class="navbar-nav justify-content-center gap-lg-4 mt-5 mt-lg-0">
+                <li class="nav-item with-arrow">
+                    <a class="nav-link text-main pointer" id="v-data-tab" data-bs-toggle="tab" data-bs-target="#v-data" role="tab" aria-controls="v-data" aria-selected="true">
+                        <i class="bi bi-person fs-4 me-3"></i>
+                        <span class="fw-semibold">Dati personali</span>
+                    </a>
+                </li>
+                <li class="nav-item with-arrow">
+                    <a class="nav-link text-main pointer" href="#" id="v-address-tab" data-bs-toggle="tab" data-bs-target="#v-address" role="tab" aria-controls="v-address" aria-selected="false">
+                        <i class="bi bi-geo-alt fs-4 me-3"></i>
+                        <span class="fw-semibold">Indirizzi</span>
+                    </a>
+                </li>
+                <li class="nav-item with-arrow">
+                    <a class="nav-link text-main pointer" href="#" id="v-purchases-tab" data-bs-toggle="tab" data-bs-target="#v-purchases" role="tab" aria-controls="v-purchases" aria-selected="false">
+                        <i class="bi bi-cart2 fs-4 me-3"></i>
+                        <span class="fw-semibold">I tuoi acquisti</span>
+                    </a>
+                </li>
+                <li class="nav-item with-arrow">
+                    <a class="nav-link text-main pointer" href="#" id="v-balance-tab" data-bs-toggle="tab" data-bs-target="#v-balance" role="tab" aria-controls="v-balance" aria-selected="true">
+                        <i class="bi bi-credit-card fs-4 me-3"></i>
+                        <span class="fw-semibold">Saldo Gift Card</span>
+                    </a>
+                </li>
+                <li class="nav-item with-arrow">
+                    <a class="nav-link text-main pointer" href="#" id="v-favorite-tab" data-bs-toggle="tab" data-bs-target="#v-favorite" role="tab" aria-controls="v-favorite" aria-selected="true">
+                        <i class="bi bi-book fs-4 me-3"></i>
+                        <span class="fw-semibold">Librerie preferite</span>
+                    </a>
+                </li>
+                <li class="nav-item with-arrow">
+                    <a class="nav-link text-main pointer" href="#" id="v-wishlist-tab" data-bs-toggle="tab" data-bs-target="#v-wishlist" role="tab" aria-controls="v-wishlist" aria-selected="true">
+                        <i class="bi bi-heart fs-4 me-3"></i>
+                        <span class="fw-semibold">Lista desideri</span>
+                    </a>
+                </li>
+                <li class="nav-item with-arrow">
+                    <a class="nav-link text-main pointer" href="#" id="v-reviews-tab" data-bs-toggle="tab" data-bs-target="#v-reviews" role="tab" aria-controls="v-reviews" aria-selected="true">
+                        <i class="bi bi-chat-dots fs-4 me-3"></i>
+                        <span class="fw-semibold">Recensioni</span>
+                    </a>
+                </li>
+                <li class="nav-item with-arrow pointer">
+                    <button class="nav-link text-main">
+                        <i class="bi bi-box-arrow-right fs-4 me-3"></i>
+                        <span class="fw-semibold">Logout</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!--================= End New Start  ===================-->
 
 
@@ -958,10 +1311,6 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/app.js"></script>
-
-    <script>
-        
-    </script>
 </body>
 
 </html>
