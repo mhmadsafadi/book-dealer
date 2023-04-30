@@ -16,6 +16,7 @@ body {
 }
 
 .btn:focus,
+.form-select:focus,
 button:focus,
 textarea:focus,
 textarea.form-control:focus,
@@ -32,6 +33,9 @@ input[type="number"]:focus,
 [contenteditable].form-control:focus {
   box-shadow: none !important;
   border-color: var(--main-color);
+}
+input.form-control.border::placeholder{
+  color: #777a86;
 }
 .form-check-input {
   border-color: var(--main-color);
@@ -125,6 +129,10 @@ input[type="number"]:focus,
 .text-danger{
   color: var(--red-color) !important;
 }
+.w-fit{
+  width: fit-content !important;
+}
+
 nav.navbar {
   box-shadow: 0px -1px 0px 0px var(--main-color);
 }
@@ -502,3 +510,35 @@ i.bi.bi-star-fill, .bi-star, i.bi.bi-patch-check {
   }
 }
 
+.deg {
+  left: 40px;
+}
+
+
+.testimonialSwiper .swiper-slide {
+  width: 40%;
+}
+.testimonialSwiper .swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+.testimonialSwiper .swiper-slide:nth-child(3n) {
+  width: 40%;
+}
+@media(max-width: 768px){
+  .testimonialSwiper .swiper-slide {
+      width: 85%;
+  }
+  .testimonialSwiper .swiper-slide:nth-child(2n) {
+      width: 85%;
+  }
+  .testimonialSwiper .swiper-slide:nth-child(3n) {
+      width: 85%;
+  }
+}
+
+
+@media(max-width: 500px){
+  .mySwiper2 .swiper-slide{
+    width: 75%;
+  }
+}

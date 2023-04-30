@@ -76,8 +76,9 @@ let swiper1 = new Swiper(".mySwiper", {
 });
 
 let swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 1,
-  spaceBetween: 10,
+  slidesPerView: "auto",
+  spaceBetween: 0,
+  loop: true,
   freeMode: false,
   simulateTouch: false,
   pagination: {
@@ -87,11 +88,11 @@ let swiper2 = new Swiper(".mySwiper2", {
   breakpoints: {
     640: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 10,
     },
     1200: {
       slidesPerView: 3,
@@ -100,4 +101,13 @@ let swiper2 = new Swiper(".mySwiper2", {
       simulateTouch: false,
     },
   },
+});
+
+
+
+
+let swiper = new Swiper(".testimonialSwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 0,
+  
 });
