@@ -1171,43 +1171,43 @@
 
             <ul class="navbar-nav justify-content-center gap-lg-4 mt-5 mt-lg-0" role="tablist" id="myTabs">
                 <li class="nav-item with-arrow" role="presentation">
-                    <button type="button" class="nav-link text-main pointer active" id="v-data-tab" data-bs-toggle="tab" data-bs-target="#v-data" role="tab" aria-controls="v-data" aria-selected="true">
+                    <button type="button" class="nav-link text-main pointer active" id="v-data-tab" data-bs-toggle="tab" data-bs-target="#v-data" role="tab" aria-controls="v-data" aria-selected="true" onclick="closeOffcanvas()">
                         <i class="bi bi-person fs-4 me-3"></i>
                         <span class="fw-semibold">Dati personali</span>
                     </button>
                 </li>
                 <li class="nav-item with-arrow" role="presentation">
-                    <button type="button" class="nav-link text-main pointer" id="v-address-tab" data-bs-toggle="tab" data-bs-target="#v-address" role="tab" aria-controls="v-address" aria-selected="false">
+                    <button type="button" class="nav-link text-main pointer" id="v-address-tab" data-bs-toggle="tab" data-bs-target="#v-address" role="tab" aria-controls="v-address" aria-selected="false" onclick="closeOffcanvas()">
                         <i class="bi bi-geo-alt fs-4 me-3"></i>
                         <span class="fw-semibold">Indirizzi</span>
                     </button>
                 </li>
                 <li class="nav-item with-arrow" role="presentation">
-                    <button type="button" class="nav-link text-main pointer" id="v-purchases-tab" data-bs-toggle="tab" data-bs-target="#v-purchases" role="tab" aria-controls="v-purchases" aria-selected="false">
+                    <button type="button" class="nav-link text-main pointer" id="v-purchases-tab" data-bs-toggle="tab" data-bs-target="#v-purchases" role="tab" aria-controls="v-purchases" aria-selected="false" onclick="closeOffcanvas()">
                         <i class="bi bi-cart2 fs-4 me-3"></i>
                         <span class="fw-semibold">I tuoi acquisti</span>
                     </button>
                 </li>
                 <li class="nav-item with-arrow" role="presentation">
-                    <button type="button" class="nav-link text-main pointer" id="v-balance-tab" data-bs-toggle="tab" data-bs-target="#v-balance" role="tab" aria-controls="v-balance" aria-selected="false">
+                    <button type="button" class="nav-link text-main pointer" id="v-balance-tab" data-bs-toggle="tab" data-bs-target="#v-balance" role="tab" aria-controls="v-balance" aria-selected="false" onclick="closeOffcanvas()">
                         <i class="bi bi-credit-card fs-4 me-3"></i>
                         <span class="fw-semibold">Saldo Gift Card</span>
                     </button>
                 </li>
                 <li class="nav-item with-arrow" role="presentation">
-                    <button type="button" class="nav-link text-main pointer" id="v-favorite-tab" data-bs-toggle="tab" data-bs-target="#v-favorite" role="tab" aria-controls="v-favorite" aria-selected="false">
+                    <button type="button" class="nav-link text-main pointer" id="v-favorite-tab" data-bs-toggle="tab" data-bs-target="#v-favorite" role="tab" aria-controls="v-favorite" aria-selected="false" onclick="closeOffcanvas()">
                         <i class="bi bi-book fs-4 me-3"></i>
                         <span class="fw-semibold">Librerie preferite</span>
                     </button>
                 </li>
                 <li class="nav-item with-arrow" role="presentation">
-                    <button type="button" class="nav-link text-main pointer" id="v-wishlist-tab" data-bs-toggle="tab" data-bs-target="#v-wishlist" role="tab" aria-controls="v-wishlist" aria-selected="false">
+                    <button type="button" class="nav-link text-main pointer" id="v-wishlist-tab" data-bs-toggle="tab" data-bs-target="#v-wishlist" role="tab" aria-controls="v-wishlist" aria-selected="false" onclick="closeOffcanvas()">
                         <i class="bi bi-heart fs-4 me-3"></i>
                         <span class="fw-semibold">Lista desideri</span>
                     </button>
                 </li>
                 <li class="nav-item with-arrow" role="presentation">
-                    <button type="button" class="nav-link text-main pointer" id="v-reviews-tab" data-bs-toggle="tab" data-bs-target="#v-reviews" role="tab" aria-controls="v-reviews" aria-selected="false">
+                    <button type="button" class="nav-link text-main pointer" id="v-reviews-tab" data-bs-toggle="tab" data-bs-target="#v-reviews" role="tab" aria-controls="v-reviews" aria-selected="false" onclick="closeOffcanvas()">
                         <i class="bi bi-chat-dots fs-4 me-3"></i>
                         <span class="fw-semibold">Recensioni</span>
                     </button>
@@ -1311,16 +1311,21 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../js/app.js"></script>
     <script>
-        // Initialize Tabs inside Offcanvas
-        var offcanvasTabs = new bootstrap.Tab(document.querySelector('#myTabs'))
-        var offcanvasEl = document.querySelector('#myOffcanvas')
-        offcanvasEl.addEventListener('shown.bs.offcanvas', function () {
-          offcanvasTabs.show()
-        })
-        offcanvasEl.addEventListener('hidden.bs.offcanvas', function () {
-          offcanvasTabs.hide()
-        })
-        </script>
+        function closeOffcanvas() {
+            var offcanvas = document.getElementById("myOffcanvas");
+            var offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+            offcanvasInstance.hide();
+        }
+        // var offcanvasTabs = new bootstrap.Tab(document.querySelector('#myTabs'))
+        // var offcanvasEl = document.querySelector('#myOffcanvas')
+        
+        // offcanvasEl.addEventListener('shown.bs.offcanvas', function () {
+        //     offcanvasTabs.show()
+        // })
+        // offcanvasEl.addEventListener('hidden.bs.offcanvas', function () {
+        //     offcanvasTabs.hide()
+        // })
+    </script>
 </body>
 
 </html>
