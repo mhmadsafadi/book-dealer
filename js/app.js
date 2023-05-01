@@ -53,6 +53,10 @@ let swiper1 = new Swiper(".mySwiper", {
   spaceBetween: 10,
   freeMode: false,
   simulateTouch: false,
+  loop: true,
+  autoplay: {
+    delay: 3500,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -81,6 +85,10 @@ let swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   freeMode: false,
   simulateTouch: false,
+  loop: true,
+  autoplay: {
+    delay: 3500,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -109,5 +117,8 @@ let swiper2 = new Swiper(".mySwiper2", {
 let swiper = new Swiper(".testimonialSwiper", {
   slidesPerView: "auto",
   spaceBetween: 0,
-  
+  loop: true,
+  autoplay: {
+    delay: 3500,
+  },
 });

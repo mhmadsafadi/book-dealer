@@ -542,3 +542,18 @@ i.bi.bi-star-fill, .bi-star, i.bi.bi-patch-check {
     width: 75%;
   }
 }
+
+
+.hero-details{
+  height: 320px;
+  background-image: url('../images/cover-lib.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-details img{
+  transition: all .3s ease-in-out;
+}
+.hero-details:hover img{
+  scale: 1.1;
+}

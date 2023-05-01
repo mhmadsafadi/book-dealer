@@ -908,7 +908,21 @@
     </div>
 
     <div class="border-top bg-body-color fixed-bottom d-block d-lg-none p-4">
-        <button class="btn border bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom2">Cerca tra i reparti</button>
+        <div class="mb-2 d-flex gap-2">
+            <button class="btn border px-3 py-2 w-fit bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2" aria-controls="offcanvasBottom2">
+                <i class="bi bi-funnel"></i>
+            </button>
+            <select class="form-select text-muted border px-3 py-2">
+                <option selected>Ordina per</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="search-box position-relative">
+            <input class="form-control border px-3 py-2" type="search" placeholder="Tua posizione">
+            <i class="bi bi-search position-absolute top-50 translate-middle-y"></i>
+        </div>
     </div>
 
     <div class="offcanvas offcanvas-bottom bg-body-color h-100" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel">
@@ -918,6 +932,57 @@
             </button>
         </div>
         <div class="offcanvas-body">
+            <div class="mb-5">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="text-main fw-semibold">Filtri attivi (5)</span>
+                    <span class="d-flex align-items-center gap-2 text-muted">
+                        <small>Azzera i filtri</small>
+                        <i class="bi bi-x-circle fs-5 pointer"></i>
+                    </span>
+                </div>
+                <div class="tags d-flex flex-wrap gap-2">
+                    <div class="w-fit px-2 py-1 rounded-3 bg-secondary bg-opacity-25 w-auto text-muted">
+                        <small>Filtro Attivo</small>
+                        <i class="bi bi-x-lg pointer"></i>
+                    </div>
+                    <div class="w-fit px-2 py-1 rounded-3 bg-secondary bg-opacity-25 w-auto text-muted">
+                        <small>Loren ebsom</small>
+                        <i class="bi bi-x-lg pointer"></i>
+                    </div>
+                    <div class="w-fit px-2 py-1 rounded-3 bg-secondary bg-opacity-25 w-auto text-muted">
+                        <small>sadas</small>
+                        <i class="bi bi-x-lg pointer"></i>
+                    </div>
+                    <div class="w-fit px-2 py-1 rounded-3 bg-secondary bg-opacity-25 w-auto text-muted">
+                        <small>Filtro</small>
+                        <i class="bi bi-x-lg pointer"></i>
+                    </div>
+                    <div class="w-fit px-2 py-1 rounded-3 bg-secondary bg-opacity-25 w-auto text-muted">
+                        <small>Attivo</small>
+                        <i class="bi bi-x-lg pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="text-main fw-semibold">Filtri attivi (2)</span>
+                    <span class="d-flex align-items-center gap-2 text-muted">
+                        <small>Azzera i filtri</small>
+                        <i class="bi bi-x-circle fs-5 pointer"></i>
+                    </span>
+                </div>
+                <div class="tags d-flex flex-wrap gap-2">
+                    <div class="w-fit px-2 py-1 rounded-3 bg-secondary bg-opacity-25 w-auto text-muted">
+                        <small>Filtro Attivo</small>
+                        <i class="bi bi-x-lg pointer"></i>
+                    </div>
+                    <div class="w-fit px-2 py-1 rounded-3 bg-secondary bg-opacity-25 w-auto text-muted">
+                        <small>Loren d</small>
+                        <i class="bi bi-x-lg pointer"></i>
+                    </div>
+                </div>
+            </div>
+
             <div class="accordion mt-4">
                 <div class="accordion-item mb-4">
                     <h2 class="accordion-header">
