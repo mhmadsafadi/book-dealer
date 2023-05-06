@@ -563,3 +563,9 @@ i.bi.bi-star-fill, .bi-star, i.bi.bi-patch-check {
     max-width: 1100px !important;
   }
 }
+
+@media(min-width: 992px) and (max-width: 1500px){
+  .library-search .form-check .form-check-label, .form-check span.float-end{
+    font-size: 14px;
+  }
+}
