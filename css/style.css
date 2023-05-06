@@ -557,3 +557,9 @@ i.bi.bi-star-fill, .bi-star, i.bi.bi-patch-check {
 .hero-details:hover img{
   scale: 1.1;
 }
+
+@media(min-width: 1400px){
+  .library-search .container{
+    max-width: 1040px !important;
+  }
+}
