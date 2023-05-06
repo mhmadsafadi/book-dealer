@@ -560,6 +560,6 @@ i.bi.bi-star-fill, .bi-star, i.bi.bi-patch-check {
 
 @media(min-width: 1400px){
   .library-search .container{
-    max-width: 1040px !important;
+    max-width: 1400px !important;
   }
 }
